@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("font-awesome.css");
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family:Verdana, Segoe, "Segoe UI", "DejaVu Sans",  "sans-serif";
+	font-size: 14px;
+	background: #f2f2f2;
+	color: #828282;
+	line-height: 1rem /* chieu cao tung dong trong 1 pagraph*/
+}
+
+section
+{
+	border-top: 3px dotted #666;
+	padding-top: 50px;
+	padding-bottom: 50px
+}
+#page-heading{
+    position: relative;
+
+}
+
+.page-name{
+    position: absolute;
+    top: 40%; left: 25%;
+    width: 50%;
+    text-align: center;
+    color: white;
+    /* border: 1px solid yellow; */
+}
+
+footer
+{ 
+ background:#2F2B2B;
+ color:#4A4444;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+	padding: 5px ;	
+}
+footer p{
+	text-decoration: none;
+	color: white;
+	padding: 5px ;	
+	
+}
+footer h4 {
+		text-decoration: none;
+	color: white;
+	padding: 5px ;
+}
+.icon a
+{
+	color:aqua;
+	padding: 5px ;
+}
+.icon a:hover
+{
+	color: orange;
+}
+.box-hidden
+{
+
+	text-align: center;
+}
+.box-hidden a
+{
+	background-color: #fff; width: 40px; height: 40px; line-height: 40px; display: inline-block;
+	color: #000; margin: 0 5px;
+	/*--- inline-block: cac icon nam tren 1 dong*/
+}
+.box-hidden a:hover
+{
+	background-color: aqua;
+}.price
+{
+	color:#B1ACAC;
+}
+.box-sp
+{
+	position: relative
+}
+.box-hidden
+{
+	position: absolute; left: 0; top: 75%; width: 100%;opacity: 0;
+	visibility: hidden; transition: all 1s;
+}
+.box-sp:hover>.box-hidden
+{
+	opacity: 1; visibility: visible; top:60%;
+}
+
+.banner-cover
+{
+	position: relative; margin: 0; padding:0;
+}
+.caption
+{
+	position: absolute; width: 100%; text-align: center; top: 45%; color:#fff;
+}
+.caption h1 
+{
+	font-size: 3rem; color:#fff;
+}
+.top-bar2 .col-6{padding:0}/*---mau 2-----*/
+.top-bar2 h4 { margin: 5px; color:#fff}
+.top-bar2
+{
+	background-color: rgba(0,0,0,0.6);
+	position: relative; color: white;
+width: 100%; left:0; top:0;
+	z-index: 888;
+}
+.header2
+{
+	background-color:#B59D9D; box-shadow: none;
+	position: absolute; top:35px; left:0; width: 100%;
+	z-index: 999;
+}
+/*--------mau 3 ----------*/
+.banner-cover-video{ z-index: -100;}
+.video-banner
+{
+	width: 100%; height: 100%;
+	object-fit: cover;
+	
+}
+#team .anh{ position: relative;}
+#team .i-ss-circle{
+	position: absolute; left:0;top:0;
+	display: flex;
+	width: 100%; height: 99%;
+	background: black;
+	opacity: 0; transition: all .5s;
+	justify-content: center;
+	align-items: center;
+}
+#team .i-ss-circle a{
+	width:40px;
+	height: 40px; line-height: 40px; text-align: center;
+	background: white; color: black;
+	border-radius: 50%;
+	margin: 5px;
+	display: inline-block;
+	transition: all .5s;
+}
+#team .i-ss-circle a:hover{background: #333; color:#fff}
+
+#team .anh:hover>.i-ss-circle{opacity:1;}
+input.so{
+	width: 30px; height: 30px;
+	border: 1px solid #ddd; text-align: center;
+}
+.right-number button{
+	border: 1px solid#ddd;
+	background: #fff;
+	height: 30px; width:30px;
+}
+.contact a{
+	color: black;
+}
+.contact a:hover{
+	color:dimgray;
+	
+}

@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+*{ box-sizing: border-box} /* giữ diện tích các box đúng từ border vào*/
+.container{ width: 70%; margin: auto} /* cho 1 box lớn cỡ 70% canh giữa trang */
+.container-fluid { width: 100%; padding: 15px}
+.row{ display: flex ; flex-wrap: wrap}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"]
+{	 padding: 15px; 
+	border: 1px;
+}
+.d-flex{	display: flex}
+.justify-between{ justify-content: space-between}
+.justify-center{ justify-content: center}
+.align-item-center{ align-items: center}
+.img-100
+{
+	width: 100%;
+	height: auto
+}
+
+.p-0{ padding: 0}
+.text-black { color: black;}
+
+*{scroll-behavior: smooth;}
+/*-----*scroll cho phep cuon header*/
+.top-bar
+{
+	background-color: #000;
+	color: white;
+}
+.top-bar .col-6
+{
+	padding: 0; margin: 0;
+}
+.top-bar h4 
+{
+	margin: 5px; color: #fff;
+}
+header {
+	position: sticky; left: 0; top:0;
+	box-shadow: 0 10px 10px #ddd;
+	width: 100% ;
+	background: white;
+	z-index: 99999;
+}
+header .container
+{
+	display: flex;/* day logo va nav len canh nhau */
+	justify-content: space-between;/* day logo va <nav> ra sat 2 bien trai, phai cuar container*/
+	align-items: center; /* canh giua theo chieu doc voi logo ben trai */
+}
+header nav ul
+{
+	margin: 0;/*-----bo margin 19*/
+	padding: 0;/* bo padding 43*/
+	list-style: none;/* bo cham dau dong*/
+	display: flex;/* day cac <li> con len canh nhau*/
+}
+header nav ul li
+{
+	position: relative
+}
+header nav ul li a
+{
+	color:#333; padding: 5px 20px;
+	text-decoration: none;
+	display: block;
+}
+header nav ul li a:hover
+{
+	background: #333; color:#fff;
+}
+header nav ul ul
+{
+	width: 200%;
+	position: absolute;
+	left; 0;
+	top: 150%;
+	background: #ddd;
+	flex-direction: column;
+	transition: all 0.5s;
+	visibility: hidden;
+	
+}
+header nav ul li:hover >ul
+{
+	top: 100%;
+	opacity: 1;
+	visibility: visible;
+	
+}
